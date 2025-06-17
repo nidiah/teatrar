@@ -1,0 +1,29 @@
+title: Base de datos de teatro argentino
+author:
+  name: hdlabconicet
+  email: hdlabconicet@gmail.com
+description: Base de datos de teatro argentino
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+social_links:
+  - title: Repositorio en Github
+    icon: github
+    url: "https://github.com/hdlabconicet"
+hide_site_feed_link: true
+
+# Build settings
+markdown: kramdown
+remote_theme: "jekyll/minima@1e8a445"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+minima:
+  skin: solarized
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  obras:
+    output: true

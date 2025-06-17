@@ -1,0 +1,35 @@
+<div id="resultado"></div>
+
+  <script>
+    const valorBuscado = "{{page.url | remove : "/obras/"| remove : ".html" }}";
+
+    // URL pública del CSV exportado de tu Google Sheet
+    const urlCSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSKUCQc45tMk7W-NkA6R46A0wwl94lGH64vvllB7QaoBZNcn2e9x2wDHsgkmcuny3NAvLBi2J9d2n8v/pub?output=csv";
+
+    Papa.parse(urlCSV, {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      complete: function(results) {
+        const datos = results.data;
+
+        const fila = datos.find(row => row.ID === valorBuscado);
+
+        if (fila) {
+          const contenedor = document.getElementById("resultado");
+          contenedor.innerHTML = `
+            <h3>${fila.Título}</h3>
+            <p><strong>Autor:</strong> ${fila.Autor}</p>
+            <p><strong>Estreno:</strong> ${fila.Estreno}</p>
+            <p><strong>Escrito:</strong> ${fila.Escrito}</p>
+            <p><strong>Teatro de estreno:</strong> ${fila.Estreno}</p>
+            <p><strong>Ciudad de estreno:</strong> ${fila.Estreno}</p>
+            <p><strong>Género:</strong> ${fila.Género}</p>
+            <p><strong>Comentarios:</strong> ${fila.Comentarios}</p>
+          `;
+        } else {
+          document.getElementById("resultado").textContent = "No se encontró la obra.";
+        }
+      }
+    });
+  </script>
