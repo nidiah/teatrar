@@ -3,8 +3,8 @@ author:
   name: hdlabconicet
   email: hdlabconicet@gmail.com
 description: Base de datos de teatro argentino
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/bd-teatro-arg" # the subpath of your site, e.g. /blog
+url: "https://nidiah.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 social_links:
   - title: Repositorio en Github
     icon: github
