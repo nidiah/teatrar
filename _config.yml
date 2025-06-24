@@ -2,14 +2,10 @@ title: Base de datos de teatro argentino
 author:
   name: hdlabconicet
   email: hdlabconicet@gmail.com
-description: Base de datos de teatro argentino
+description: >
+  Base de datos de teatro argentino. Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description. 
 baseurl: "/bd-teatro-arg" # the subpath of your site, e.g. /blog
 url: "https://nidiah.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-social_links:
-  - title: Repositorio en Github
-    icon: github
-    url: "https://github.com/hdlabconicet"
-hide_site_feed_link: true
 
 # Build settings
 markdown: kramdown
@@ -18,8 +14,16 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
+
 minima:
-  skin: solarized
+  skin: classic
+  nav_pages:
+    - about.md
+  social_links:
+    - title: Repositorio en Github
+      icon: github
+      url: "https://github.com/hdlabconicet"
+  hide_site_feed_link: true
 
 exclude:
   - Gemfile

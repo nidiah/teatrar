@@ -3,7 +3,13 @@ layout: home
 title: Inicio
 ---
 
-<table id="tabla-obras" class="display" style="width:100%">
+Haga click en el nombre de una obra para obtener más información. 
+
+Use el campo "Buscar" para realizar una búsqueda en cualquiera de las columnas. 
+
+<br>
+
+<table id="tabla-obras" class="display" style="width:100%;">
     <thead>
       <tr>
         <th>Autor</th>
@@ -17,7 +23,7 @@ title: Inicio
 </table>
 
   <script>
-    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSKUCQc45tMk7W-NkA6R46A0wwl94lGH64vvllB7QaoBZNcn2e9x2wDHsgkmcuny3NAvLBi2J9d2n8v/pub?output=csv", {
+    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQDRi6oL3EbBS14Z6gOyJc12guLm3_CPOaQ6jDo2CXN9bUCKEJ2dbhmPcvg06Z-pSrZwj4QgfStcjKk/pub?gid=0&single=true&output=csv", {
       download: true,
       header: true,
       complete: function(results) {
