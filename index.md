@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Inicio
+title: Base de datos
 ---
 
-Haga click en el nombre de una obra para obtener más información. 
+La base de datos del proyecto TeatrAr contiene información sobre obras de teatro producidas en el actual territorio de la República Argentina entre el siglo XVIII y los inicios del siglo XX.
 
-Use el campo "Buscar" para realizar una búsqueda en cualquiera de las columnas. 
+Se ofrece información sobre autoría, fecha y lugar de composición, estreno, género, etc., así como el acceso al texto digital y codificado en XML-TEI y sus visualizaciones desde ArDraCor.
 
 <br>
 
