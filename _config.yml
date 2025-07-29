@@ -1,5 +1,5 @@
 title: TeatrAr
-author: hdlabconicet
+author: 
   name: hdlabconicet
   email: hdlabconicet@gmail.com
 description: >
@@ -19,7 +19,6 @@ minima:
   skin: classic
   nav_pages:
     - about.md
-    - index.md
   social_links:
     - title: Repositorios en Github
       icon: github
