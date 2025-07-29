@@ -5,7 +5,7 @@ author:
 description: >
   Base de datos de obras teatrales escritas y representadas en Argentina entre el siglo XVIII y principios del siglo XX
 baseurl: "/teatrar" # the subpath of your site, e.g. /blog
-url: "https://nidiah.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://hdlab.space/teatrar/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
@@ -19,6 +19,7 @@ minima:
   skin: classic
   nav_pages:
     - about.md
+    - index.md
   social_links:
     - title: Repositorios en Github
       icon: github
