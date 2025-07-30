@@ -28,9 +28,7 @@ minima:
       icon: github
       url: "https://github.com/hdlabconicet"
   hide_site_feed_link: true
-   title: HD LAB at Facebook 
-     icon: Facebook
-     url: "https://www.facebook.com/HDLAB.CONICET/"
+  
 
 exclude:
   - Gemfile
