@@ -6,9 +6,7 @@ description: >
   Base de datos de obras teatrales escritas y representadas en Argentina entre el siglo XVIII y principios del siglo XX
 baseurl: "/teatrar" # the subpath of your site, e.g. /blog
 url: "https://hdlab.space" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: hdlabconicet
-github_username:  hdlabconicet
-facebook_username: hdlabconicet
+
 
 
 # Build settings
@@ -36,5 +34,4 @@ exclude:
 collections:
   obras:
     output: true
-     pages:
-      output: true
+     
