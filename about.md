@@ -9,3 +9,5 @@ TeatrAr estudia obras teatrales escritas y representadas entre el siglo XVIII y 
 El primer objetivo de nuestro proyecto es relevar estudios y ediciones previas para nuestra base de datos y crear un corpus codificado en formato [TEI](https://tei-c.org/) (Text Encoding Initiative). Este corpus se incorporará como ArDraCor (Argentina Drama Corpus) en [DraCor](https://dracor.org/) (Drama Corpora), un ecosistema de corpus programables que agrupa obras dramáticas (en su mayoría europeas), codificadas en formato TEI y que pone a disposición del usuario una API documentada para extraer datos informatizados, facilitando el acceso y reutilización de la información de acuerdo con los principios FAIR (Findable, Accessible, Interoperable, Reusable).
 
 Este proyecto es liderado por el HD LAB del IIBICRIT de CONICET con la colaboracion del [grupo RosDH de la Universidad de Rostock](https://www.germanistik.uni-rostock.de/en/forschung/digital-humanities/rosdh/).
+
+Repositorio GitHub [ArDraCor](https://github.com/dracor-org/ardracor)
