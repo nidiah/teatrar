@@ -8,8 +8,9 @@ La base de datos del proyecto TeatrAr contiene información sobre obras de teatr
 Se ofrece información sobre autoría, fecha y lugar de composición, estreno, género, etc., así como el acceso al texto digital y codificado en XML-TEI y sus visualizaciones desde ArDraCor.
 
 <br>
+<div id="loading" style="font-size:20px;color:#555;text-align:center;padding:20px;"><i class="fa-solid fa-hourglass-half"></i> Cargando datos...</div>
 
-<table id="tabla-obras" class="display" style="width:100%;">
+<table id="tabla-obras" class="display" style="width:100%;display:none;">
     <thead>
       <tr>
         <th>Autor</th>
@@ -48,6 +49,9 @@ Se ofrece información sobre autoría, fecha y lugar de composición, estreno, g
             url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json'
           }
         });
+
+        $('#loading').hide();
+        $('#tabla-obras').show();
       }
     });
   </script>

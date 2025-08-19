@@ -1,4 +1,5 @@
-<div id="resultado"></div>
+  <div id="loading" style="font-size:20px;color:#555;text-align:center;padding:20px;"><i class="fa-solid fa-hourglass-half"></i> Cargando datos...</div>
+  <div id="resultado" style="display:none;"></div>
 
   <script>
     const valorBuscado = "{{page.url | remove : "/obras/"| remove : ".html" }}";
@@ -14,8 +15,11 @@
 
         const fila = datos.find(row => row.ID === valorBuscado);
 
+        document.getElementById("loading").style.display = "none";
+        const contenedor = document.getElementById("resultado");
+        contenedor.style.display = "block";
+
         if (fila) {
-          const contenedor = document.getElementById("resultado");
           contenedor.innerHTML = `
             <h3>${fila.Título}</h3>
             <p><strong>Autor:</strong> ${fila.Autor}</p>
